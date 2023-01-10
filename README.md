@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is involves random password generating. By clicking on "Generate Password" button, options of different types of symbols will be given. The user can decide what symbols likes to include. The options are lowercase letters, uppercase letters, numbers and special symbols. After confirmation the password will be displayed in the box.
+This project involves random password generating. By clicking on "Generate Password" button, options of different types of symbols will be given. The user can decide what symbols likes to include. The options are lowercase letters, uppercase letters, numbers and special symbols. After confirmation the password will be displayed in the box.
 
 
 ## Screenshots

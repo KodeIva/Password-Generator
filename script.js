@@ -95,7 +95,7 @@ let randomPass = ''
 
 // Function to prompt user for password options
 function getPasswordOptions() {
- 
+ randomPass = ''
  customPref = prompt('How long wolud you like your password to be? Choose a number between 10 and 64.')
  if(customPref >= 10 && customPref <= 64) {
    let lowers = confirm("Would you like to have lower case letters?")

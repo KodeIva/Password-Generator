@@ -95,6 +95,7 @@ let randomPass = ''
 
 // Function to prompt user for password options
 function getPasswordOptions() {
+ bigArr = []
  randomPass = ''
  customPref = prompt('How long wolud you like your password to be? Choose a number between 10 and 64.')
  if(customPref >= 10 && customPref <= 64) {
@@ -104,7 +105,7 @@ function getPasswordOptions() {
    let specials = confirm("Would you like special symbols?")
   
     if(lowers === true) {
-      bigArr = [...lowerCasedCharacters]
+      bigArr = [...lowerCasedCharacters];
     }
      
     if(uppers === true) {
@@ -124,6 +125,7 @@ function getPasswordOptions() {
    
  } else{
   alert("Please try again. Insert number between 10 and 64!")
+  return
  }
  getRandom(bigArr)
 }
@@ -137,14 +139,12 @@ function getRandom(arr) {
  return randomPass
 }
 
-
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
   getPasswordOptions()
-  //var password = generatePassword();
   var passwordText = document.querySelector('#password');
   passwordText.value = randomPass;
 }
